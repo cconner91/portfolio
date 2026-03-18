@@ -5,7 +5,7 @@ export const certifications = [
     year: "2026",
     status: "COMPLETE",
     logo: "/logos/google_logo.jpg",
-    link: "https://coursera.org", // update later
+    link: "https://www.credly.com/badges/abf17ccb-f583-42aa-84d4-171ac70330c6/public_url",
   },
   {
     name: "Google Ads | Measurement Certification",
