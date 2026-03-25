@@ -37,6 +37,9 @@ export default function Navbar() {
             <a href="#certifications" className="text-sm text-gray-300 hover:text-white transition">
               Certifications
             </a>
+            <a href="#blog" className="text-sm text-gray-300 hover:text-white transition">
+              Blog
+            </a>
 
             <a href="#contact" className="text-sm text-gray-300 hover:text-white transition">
               Contact
