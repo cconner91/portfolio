@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50">
       
       {/* Container */}
-      <div className="max-w-6xl mx-auto px-6 py-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-4">
         
         {/* Centered Nav */}
         <div className="flex justify-center">

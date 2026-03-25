@@ -102,7 +102,7 @@ export default function Projects() {
       id="projects"
       className="px-6 py-20 max-w-5xl mx-auto">
       <h2 className="text-5xl md:text-6xl font-semibold tracking-[-0.02em] mb-12 text-center">
-        Projects
+        My Techincal Projects
       </h2>
 
       <div className="grid md:grid-cols-2 gap-8 auto-rows-[260px]">

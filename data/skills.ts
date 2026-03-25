@@ -9,7 +9,7 @@ export const skills = [
       { name: "Python", logo: "https://cdn.simpleicons.org/python/3776AB", category: "technical" },
       { name: "Zapier", logo: "https://cdn.simpleicons.org/zapier/FF4F00", category: "technical" },
       { name: "BigQuery", logo: "https://cdn.simpleicons.org/googlebigquery/669DF6", category: "technical" },
-            { name: "Jira", logo: "https://cdn.simpleicons.org/jirasoftware/0052CC", category: "technical" },
+      { name: "Jira", logo: "https://cdn.simpleicons.org/jirasoftware/0052CC", category: "technical" },
 
       { name: "GA4", logo: "https://cdn.simpleicons.org/googleanalytics/E37400", category: "marketing" },
       { name: "Tableau", logo: "/logos/tableau_logo.jpg", category: "marketing" },

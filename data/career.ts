@@ -10,10 +10,10 @@ export const career = [
   {
     company: "Pingtree",
     logo: "/logos/pingtree_logo.jpg",
-    role: "Product Manager",
+    role: "Sr. Product Manager, Marketing Analytics",
     period: "2022 - 2025",
     description:
-      "Helped design and scale lead generation and distribution systems, working closely with product and engineering teams.",
+      "Helped design and scale lead generation and distribution systems, working closely with engineering teams.",
   },
   {
     company: "Better.com",

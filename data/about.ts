@@ -14,6 +14,7 @@ I’m currently a Technical Account Manager at Invoca, where I partner with cust
   focus: [
     "Product strategy & systems design",
     "Data modeling & analytics",
+    "AI workflows and Agentic systems",
     "Sports betting & game frameworks",
   ],
 };

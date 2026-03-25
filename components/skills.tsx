@@ -4,9 +4,9 @@ import { skills } from "../data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-6 py-20 max-w-5xl mx-auto">
+    <section id="skills" className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 max-w-5xl mx-auto">
 
-      <h2 className="text-5xl md:text-6xl font-semibold mb-12 text-center">
+     <h2 className="text-3xl sm:text-4xl md:text-6xl font-semibold mb-12 text-center">
         Technical Skillsets & Tools
       </h2>
 
@@ -32,10 +32,10 @@ export default function Skills() {
                   return (
                     <div key={cat} className="flex flex-col items-center">
 
-                      <div className="text-[17px] text-gray-300 mb-10 tracking-widest uppercase">
-                        {cat === "technical" && "[Technical / Dev]"}
-                        {cat === "marketing" && "[Marketing & Analytics]"}
-                        {cat === "testing" && "[Testing & Wireframing]"}
+                      <div className="text-[19px] text-gray-100 mb-10 tracking-widest uppercase">
+                        {cat === "technical" && "{Technical / Dev}"}
+                        {cat === "marketing" && "{Marketing & Analytics}"}
+                        {cat === "testing" && "{Testing & Wireframing}"}
                       </div>
 
                       {/* HEX GRID */}
@@ -43,10 +43,22 @@ export default function Skills() {
 
                         {filtered.map((item: any, i: number) => (
                           <div key={i} className="hex">
+                            <svg
+                              viewBox="0 0 100 100"
+                              className="absolute inset-0 w-full h-full pointer-events-none"
+                            >
+                            <polygon
+                              points="50,0 100,25 100,75 50,100 0,75 0,25"
+                              fill="#1f1b2e"
+                              stroke="transparent"
+                              strokeWidth="2"
+                              className="hex-shape"
+                              />
+                            </svg>
                             <img
                               src={item.logo}
                               alt={item.name}
-                              className="w-14 h-14 object-contain"
+                              className="w-14 h-14 object-contain relative z-10"
                             />
                           </div>
                         ))}
@@ -59,7 +71,7 @@ export default function Skills() {
 
               </div>
             ) : (
-              <div className="grid md:grid-cols-2 gap-y-3 pl-4">
+              <div className="grid md:grid-cols-2 gap-y-2 pl-10">
                 {group.items.map((item: string, j: number) => (
                   <div key={j} className="text-sm text-gray-300">
                     {item}

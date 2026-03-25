@@ -18,39 +18,109 @@
 }
 
 /* BACKGROUND */
+
+/* FIX: establish proper stacking */
 body {
   @apply bg-black text-white;
+  position: relative;
+  z-index: 0;
 
   background:
-    radial-gradient(circle at 25% 15%, rgba(59,130,246,0.12), transparent 45%),
-    radial-gradient(circle at 80% 70%, rgba(100,116,139,0.10), transparent 50%),
-    linear-gradient(135deg, rgba(59,130,246,0.05) 0%, rgba(0,0,0,0) 40%),
+    radial-gradient(circle at 20% 10%, rgba(59,130,246,0.18), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(99,102,241,0.15), transparent 55%),
+    radial-gradient(circle at 50% 50%, rgba(78,161,255,0.08), transparent 60%),
     black;
+
+  /* FIX: make animation actually visible */
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease-in-out infinite alternate;
 }
 
-/* HEX BASE */
+/* GRID OVERLAY */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background-image:
+    linear-gradient(rgba(78,161,255,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(78,161,255,0.08) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+  opacity: 0.5;
+}
+
+/* STARFIELD */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.25), transparent),
+    radial-gradient(1px 1px at 70% 60%, rgba(255,255,255,0.2), transparent),
+    radial-gradient(1.5px 1.5px at 40% 80%, rgba(255,255,255,0.2), transparent),
+    radial-gradient(1px 1px at 90% 20%, rgba(255,255,255,0.15), transparent);
+
+  opacity: 0.6;
+  animation: starDrift 60s linear infinite;
+}
+
+/* ANIMATIONS */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%, 100% 50%, 50% 50%;
+  }
+  100% {
+    background-position: 100% 50%, 0% 50%, 50% 100%;
+  }
+}
+
+@keyframes starDrift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-200px); }
+}
+
+/* FADE IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SECTION DIVIDER */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(78,161,255,0.3), transparent);
+  margin: 60px 0;
+}
+
+/* HEX BASE (SVG VERSION) */
 .hex {
   width: 120px;
   height: 138px;
-  background: #1f1b2e;
+  position: relative;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  clip-path: polygon(
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%,
-    0% 25%
-  );
+  background: transparent;
 
-  transition: all 0.25s ease;
+  transition: transform 0.25s ease;
+  transform-origin: center bottom;
 }
 
-/* GRID WRAPPER (THIS FIXES ALIGNMENT) */
+/* GRID WRAPPER */
 .hex-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 120px);
@@ -61,36 +131,29 @@ body {
 
 /* OFFSET EVERY SECOND ROW */
 .hex-wrapper .hex:nth-child(n+5) {
-  transform: translateX(68px) translateY(-40px);
+  margin-left: 68px;
+  margin-top: -40px;
 }
 
-/* HOVER FIX (CLEAN BORDER) */
+/* SVG SHAPE */
+.hex-shape {
+  transition: all 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.hex:hover .hex-shape {
+  stroke: #4ea1ff;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 6px rgba(78,161,255,0.6));
+}
+
+/* HOVER SCALE */
 .hex:hover {
-  transform: scale(1.05);
-  box-shadow:
-    0 0 0 2px #4ea1ff,
-    0 0 16px rgba(78,161,255,0.4);
+  transform: scale(1.08) translateY(-4px);
+  filter: brightness(1.1);
 }
 
-.hex {
-  width: 120px;
-  height: 138px;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #1f1b2e;
-
-  clip-path: polygon(
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%,
-    0% 25%
-  );
-
-  transition: transform 0.25s ease;
+/* PERFORMANCE */
+.hex-wrapper .hex {
+  will-change: transform;
 }

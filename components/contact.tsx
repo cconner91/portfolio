@@ -24,7 +24,7 @@ export default function Contact() {
         
         {/* EMAIL */}
         <a
-          href="mailto:your@email.com"
+          href="mailto:charlieconner91@gmail.com"
           className="
             inline-flex items-center gap-2
             px-6 py-3
@@ -44,7 +44,7 @@ export default function Contact() {
 
         {/* LINKEDIN */}
         <a
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/charlesconner91"
           target="_blank"
           className="
             inline-flex items-center gap-2
@@ -63,7 +63,7 @@ export default function Contact() {
 
         {/* GITHUB */}
         <a
-          href="https://github.com"
+          href="https://github.com/cconner91"
           target="_blank"
           className="
             inline-flex items-center gap-2
