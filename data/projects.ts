@@ -8,12 +8,12 @@ export const projects = [
     link: "https://tee2green.vercel.app",
   },
   {
-    title: "ReviewReactor",
+    title: "PlayrIQ",
     description:
-      "ReviewReactor.io is the ultimate review management platform designed specifically for business owners who want to take control of their online reputation",
-    logo: "/logos/rr_logo.jpg",
-    tags: ["Analytics", "SaaS", "Data Modeling"],
-    link: "",
+     "PlayrIQ is the ultimate test of your athlete knowledge. Play the daily mode to keep your streak going or challenge friends. You'll need to be selective with your guesses as you only have 8 shots at determing the target player",
+    logo: "/logos/playrIQ_logo.png",
+    tags: ["Sports Game", "Quiz"],
+    link: "https://playriq.vercel.app",
   },
     {
     title: "SharkLine Sports [COMING SOON]",

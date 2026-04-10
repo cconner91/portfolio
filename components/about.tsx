@@ -2,6 +2,7 @@
 
 import { about } from "../data/about";
 
+
 export default function About() {
   return (
     <section
