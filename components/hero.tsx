@@ -81,7 +81,7 @@ export default function Hero() {
     "
   >
     View Resume
-    <img src="/logos/resume_logo.jpg" alt="" className="w-5 h-5 object-contain" />
+    <img src="/logos/resume_logo.svg" alt="" className="w-5 h-5 object-contain" />
   </a>
 </div>
       </div>

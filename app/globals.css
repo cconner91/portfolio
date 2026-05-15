@@ -160,6 +160,19 @@ body::after {
 .hex-wrapper .hex {
   will-change: transform;
 }
+/* DOT GRID OVERLAY */
+.dot-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image: radial-gradient(circle, rgba(78, 161, 255, 0.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.45;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+}
+
 /* HEX TOOLTIP */
 .hex-tooltip {
   position: absolute;

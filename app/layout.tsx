@@ -30,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="dot-grid" />
         <div className="cursor-glow" />
         {children}
       </body>
