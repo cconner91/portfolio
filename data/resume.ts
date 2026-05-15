@@ -134,11 +134,21 @@ export const resume = {
     {
       name: "API Fundamentals Student Expert",
       issuer: "Postman Academy",
-      link: "",
+      link: "https://badges.parchment.com/public/assertions/m2vrMs3DQBiJvEFTzo7W-w?utm_source=url_copy&identity__email=charlieconner91%40gmail.com",
     },
     {
       name: "Complete SQL Bootcamp",
       issuer: "Udemy",
+      link: "http://cdn.prod.website-files.com/6708007c4166c57aa0b5da7a/6712aebced4f79ea760e4e7e_SQL_Cert.pdf",
+    },
+    {
+      name: "IBM AI Product Manager - (IN PROGRESS)",
+      issuer: "IBM",
+      link: "",
+    },
+    {
+      name: "Introduction to Agent Observability & Observation - (IN PROGRESS)",
+      issuer: "LangChain Academy",
       link: "",
     },
   ],

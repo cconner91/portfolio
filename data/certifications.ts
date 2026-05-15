@@ -37,7 +37,7 @@ export const certifications = [
     year: "2025",
     status: "COMPLETE",
     logo: "/logos/postman_logo.jpg",
-    link: "badgr.com/public/assertions/m2vrMs3DQBiJvEFTzo7W-w?identity__email=charlieconner91%40gmail.com",
+    link: "https://badges.parchment.com/public/assertions/m2vrMs3DQBiJvEFTzo7W-w?utm_source=url_copy&identity__email=charlieconner91%40gmail.com",
   },
     {
     name: "IBM AI Product Manager",
