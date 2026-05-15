@@ -124,7 +124,7 @@ export default function Projects() {
         My Technical Projects
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-8 auto-rows-[260px]">
+      <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project: any, i: number) => (
           <ProjectCard key={i} project={project} />
         ))}

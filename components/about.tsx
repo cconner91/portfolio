@@ -16,7 +16,6 @@ export default function About() {
         <h3 className="text-lg font-semibold mb-5 text-white">
           Personal Background
         </h3>
-        </div>
         <div className="text-sm text-gray-400 leading-relaxed mb-6 whitespace-pre-line">
   {about.personal.split("Towson University").map((part, index, arr) => {
     if (index === arr.length - 1) return part;
@@ -36,6 +35,7 @@ export default function About() {
     );
   })}
 </div>
+      </div>
       <div className="mb-10">
         <h3 className="text-lg font-semibold mb-5 text-white">
           Professional Background

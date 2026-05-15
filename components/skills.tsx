@@ -33,9 +33,9 @@ export default function Skills() {
                     <div key={cat} className="flex flex-col items-center">
 
                       <div className="text-[19px] text-gray-100 mb-10 tracking-widest uppercase">
-                        {cat === "technical" && "{Technical / Dev}"}
-                        {cat === "marketing" && "{Marketing & Analytics}"}
-                        {cat === "testing" && "{Testing & Wireframing}"}
+                        {cat === "technical" && "Technical / Dev"}
+                        {cat === "marketing" && "Marketing & Analytics"}
+                        {cat === "testing" && "Testing & Wireframing"}
                       </div>
 
                       {/* HEX GRID */}
@@ -60,6 +60,7 @@ export default function Skills() {
                               alt={item.name}
                               className="w-14 h-14 object-contain relative z-10"
                             />
+                            <span className="hex-tooltip">{item.name}</span>
                           </div>
                         ))}
 

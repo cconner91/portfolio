@@ -3,9 +3,14 @@ export const career = [
     company: "Invoca",
     logo: "/logos/invoca_logo.jpg",
     role: "Technical Account Manager",
-    period: "2025 - Present",
+    period: "Feb, 2025 - Present",
     description:
-      "Work with customers to implement scalable solutions and optimize performance using AI-driven capabilities and data insights."
+      "Work with customers to implement scalable solutions and optimize performance using AI-driven capabilities and data insights.",
+    bullets: [
+      { label: "Agentic AI Deployment", text: "Configuring and implementing Invoca's next-gen AI products (Voice, SMS, and Lead Forms) to drive customer campaign success." },
+      { label: "Quality Assurance", text: "Leading end-to-end testing and QA for complex AI workflows to ensure high-accuracy performance." },
+      { label: "Operational Efficiency", text: "Designing and building internal AI workflows to automate processes and scale implementation efforts." },
+    ],
   },
   {
     company: "Pingtree",

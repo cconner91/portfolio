@@ -98,6 +98,17 @@ export default function Career() {
             {career[activeIndex].description}
           </p>
 
+          {(career[activeIndex] as any).bullets && (
+            <ul className="mt-4 space-y-3">
+              {(career[activeIndex] as any).bullets.map((bullet: any, i: number) => (
+                <li key={i} className="text-sm text-gray-400 leading-relaxed">
+                  <span className="text-slate-200 font-medium">{bullet.label}: </span>
+                  {bullet.text}
+                </li>
+              ))}
+            </ul>
+          )}
+
         </div>
       </div>
     </section>

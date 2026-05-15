@@ -32,7 +32,7 @@ export default function Hero() {
         </p>
 
         {/* Social Icons */}
-        <div className="mt-5 flex justify-center gap-6 text-lg opacity-80">
+        <div className="mt-5 flex justify-center gap-6 text-xl">
           <a
             href="https://linkedin.com/in/charlesconner91"
             target="_blank"
@@ -72,7 +72,7 @@ export default function Hero() {
     rel="noopener noreferrer"
     className="
       inline-flex items-center gap-1.5
-      px-6 py-4
+      px-6 py-2.5
       rounded-full
       text-sm font-semibold
       text-white

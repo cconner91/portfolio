@@ -5,7 +5,7 @@ export const skills = [
       { name: "Postman", logo: "https://cdn.simpleicons.org/postman/FF6C37", category: "technical" },
       { name: "GitHub", logo: "https://cdn.simpleicons.org/refinedgithub/9E95B7", category: "technical" },
       { name: "VS Code", logo: "/logos/vscode_logo.jpg", category: "technical" },
-      { name: "Cursor", logo: "https://cdn.simpleicons.org/cursor/C7C3C1", category: "technical" },
+      { name: "Workato", logo: "/logos/workato_logo.jpg", category: "technical" },
       { name: "Python", logo: "https://cdn.simpleicons.org/python/3776AB", category: "technical" },
       { name: "Zapier", logo: "https://cdn.simpleicons.org/zapier/FF4F00", category: "technical" },
       { name: "BigQuery", logo: "https://cdn.simpleicons.org/googlebigquery/669DF6", category: "technical" },
