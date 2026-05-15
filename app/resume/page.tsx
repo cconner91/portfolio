@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { profile } from "../../data/profile";
-import { about } from "../../data/about";
 import { career } from "../../data/career";
 import { skills } from "../../data/skills";
 import { certifications } from "../../data/certifications";
@@ -89,8 +88,12 @@ export default function ResumePage() {
 
       {/* SUMMARY */}
       <Section title="Professional Summary">
-        <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-line">
-          {about.professional}
+        <p className="text-sm text-gray-300 leading-relaxed">
+          Product-minded technical professional specializing in bridging customer needs with product
+          capabilities to drive scalable growth. Experienced in agentic AI systems, data-driven optimization,
+          and translating complex technical requirements into actionable product and implementation
+          strategies. Proven ability to influence roadmap decisions, manage cross-functional initiatives,
+          and deliver high-impact platform solutions for digital and performance-driven teams.
         </p>
       </Section>
 
