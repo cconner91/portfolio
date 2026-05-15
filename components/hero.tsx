@@ -67,9 +67,7 @@ export default function Hero() {
 {/* Resume Button */}
 <div className="mt-6 flex justify-center">
   <a
-    href="/charlie_resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
+    href="/resume"
     className="
       inline-flex items-center gap-1.5
       px-6 py-2.5

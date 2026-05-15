@@ -12,16 +12,16 @@ export const skills = [
       { name: "Jira", logo: "https://cdn.simpleicons.org/jirasoftware/0052CC", category: "technical" },
 
       { name: "GA4", logo: "https://cdn.simpleicons.org/googleanalytics/E37400", category: "marketing" },
+      { name: "Google Ads", logo: "https://cdn.simpleicons.org/googleads/4285F4", category: "marketing" },
+      { name: "Google Tag Manager", logo: "https://cdn.simpleicons.org/googletagmanager/246FDB", category: "marketing" },
       { name: "Tableau", logo: "/logos/tableau_logo.jpg", category: "marketing" },
       { name: "Looker", logo: "https://cdn.simpleicons.org/looker/4285F4", category: "marketing" },
-      { name: "HotJar", logo: "https://cdn.simpleicons.org/hotjar/FF3C00", category: "marketing" },
       { name: "Salesforce", logo: "/logos/salesforce_logo.jpg", category: "marketing" },
       { name: "HubSpot", logo: "https://cdn.simpleicons.org/hubspot/FF7A59", category: "marketing" },
-      { name: "Google Ads", logo: "https://cdn.simpleicons.org/googleads/4285F4", category: "marketing" },
       { name: "Meta Ads", logo: "https://cdn.simpleicons.org/meta/0467DF", category: "marketing" },
 
       { name: "VWO", logo: "/logos/vwo_logo.jpg", category: "testing" },
-      { name: "Google Tag Manager", logo: "https://cdn.simpleicons.org/googletagmanager/246FDB", category: "testing" },
+      { name: "HotJar", logo: "https://cdn.simpleicons.org/hotjar/FF3C00", category: "testing" },
       { name: "Figma", logo: "https://cdn.simpleicons.org/figma/F24E1E", category: "testing" },
       { name: "Lucidchart", logo: "https://cdn.simpleicons.org/lucid/E05409", category: "testing" }
     ],
