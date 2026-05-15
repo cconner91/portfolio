@@ -21,6 +21,16 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 export default function ResumePage() {
+  const groupedExperience = resume.experience.reduce((acc: any[], job) => {
+    const prev = acc[acc.length - 1];
+    if (prev && prev.company === job.company) {
+      prev.roles.push(job);
+    } else {
+      acc.push({ company: job.company, logo: job.logo, roles: [job] });
+    }
+    return acc;
+  }, []);
+
   return (
     <div className="min-h-screen px-4 py-10 sm:px-8 max-w-4xl mx-auto">
 
@@ -74,41 +84,49 @@ export default function ResumePage() {
       {/* EXPERIENCE */}
       <Section title="Employment">
         <div className="space-y-8">
-          {resume.experience.map((job, i) => (
+          {groupedExperience.map((group, i) => (
             <div key={i} className="flex gap-5">
-              {job.logo ? (
+              {group.logo ? (
                 <div className="w-10 h-10 flex items-center justify-center bg-white rounded-lg p-[3px] shrink-0 mt-1">
-                  <img src={job.logo} alt={job.company} className="w-full h-full object-contain" />
+                  <img src={group.logo} alt={group.company} className="w-full h-full object-contain" />
                 </div>
               ) : (
                 <div className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg shrink-0 mt-1 text-xs font-bold text-gray-400">
-                  {job.company.charAt(0)}
+                  {group.company.charAt(0)}
                 </div>
               )}
               <div className="flex-1">
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <h3 className="font-semibold text-white leading-snug">
-                      {job.role}
-                      {job.partTime && (
-                        <span className="ml-2 text-xs font-normal text-gray-500">(Part-Time)</span>
-                      )}
-                    </h3>
-                    <p className="text-sm text-[#4ea1ff] mt-0.5">{job.company}</p>
+                <p className="text-sm text-[#4ea1ff] font-medium mb-3">{group.company}</p>
+                {group.roles.map((role: any, j: number) => (
+                  <div key={j}>
+                    {j > 0 && (
+                      <div className="flex items-center gap-2 my-4">
+                        <span className="text-xs text-emerald-400 flex items-center gap-1">↑ Promoted</span>
+                        <div className="flex-1 h-px border-t border-dashed border-emerald-400/20" />
+                      </div>
+                    )}
+                    <div className="flex items-start justify-between gap-3">
+                      <h3 className="font-semibold text-white leading-snug">
+                        {role.role}
+                        {role.partTime && (
+                          <span className="ml-2 text-xs font-normal text-gray-500">(Part-Time)</span>
+                        )}
+                      </h3>
+                      <div className="text-right shrink-0">
+                        <p className="text-xs text-gray-500 font-mono">{role.period}</p>
+                        <p className="text-xs text-gray-600 mt-0.5">{role.location}</p>
+                      </div>
+                    </div>
+                    <ul className="mt-3 space-y-2">
+                      {role.bullets.map((bullet: string, k: number) => (
+                        <li key={k} className="text-sm text-gray-400 flex gap-2.5">
+                          <span className="text-[#4ea1ff] mt-[3px] shrink-0">▸</span>
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <div className="text-right shrink-0">
-                    <p className="text-xs text-gray-500 font-mono">{job.period}</p>
-                    <p className="text-xs text-gray-600 mt-0.5">{job.location}</p>
-                  </div>
-                </div>
-                <ul className="mt-3 space-y-2">
-                  {job.bullets.map((bullet, j) => (
-                    <li key={j} className="text-sm text-gray-400 flex gap-2.5">
-                      <span className="text-[#4ea1ff] mt-[3px] shrink-0">▸</span>
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+                ))}
               </div>
             </div>
           ))}

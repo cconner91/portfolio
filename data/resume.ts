@@ -44,7 +44,7 @@ export const resume = {
     },
     {
       company: "Low6",
-      logo: null,
+      logo: "/logos/low6_logo.jpg",
       role: "US Game Partnership Executive",
       period: "Aug 2022 – Jul 2023",
       location: "Carlsbad, CA",
@@ -82,7 +82,7 @@ export const resume = {
     },
     {
       company: "Mortgage Warehouse LLC",
-      logo: null,
+      logo: "/logos/mortgage_warehouse_logo.jpg",
       role: "Senior Mortgage Consultant",
       period: "Dec 2017 – Jan 2020",
       location: "Fort Myers, FL",
@@ -107,13 +107,13 @@ export const resume = {
     "Go-to-Market Strategy",
   ],
   tools: [
-    { category: "Technical & Dev", items: ["Postman", "GitHub", "SQL", "VS Code"] },
-    { category: "Analytics", items: ["GA4", "Tableau", "HotJar"] },
+    { category: "Technical & Dev", items: ["Postman", "GitHub", "Zapier", "Workato", "SQL", "VS Code"] },
+    { category: "Analytics", items: ["GA4", "Tableau","Looker", "BigQuery", "HotJar"] },
     { category: "CRM / Marketing", items: ["SalesForce", "HubSpot"] },
-    { category: "Ad Platforms", items: ["Google Ads", "Meta Ads"] },
+    { category: "Ad Platforms", items: ["Google Ads", "Meta Ads", "Tik Tok Ads"] },
     { category: "Experimentation / Tagging", items: ["VWO", "Google Tag Manager"] },
     { category: "Wireframing", items: ["Lucid Charts", "Figma"] },
-    { category: "AI Tools", items: ["LangChain (LLM Orchestration)", "Chat GPT / Open AI"] },
+    { category: "AI Tools", items: ["LangChain (LLM Orchestration)", "Polaris", "Chat GPT / Open AI"] },
   ],
   certifications: [
     {

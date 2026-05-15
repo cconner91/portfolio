@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const navLinks = [
   { label: "About", id: "about" },
@@ -72,6 +73,13 @@ export default function Navbar() {
                 {label}
               </a>
             ))}
+
+            <Link
+              href="/resume"
+              className="text-sm px-3 py-1 rounded-full border border-[#4ea1ff]/30 text-[#4ea1ff] hover:bg-[#4ea1ff]/10 transition-colors duration-200"
+            >
+              Resume
+            </Link>
           </div>
         </div>
 

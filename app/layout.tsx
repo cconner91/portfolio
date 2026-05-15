@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Charlie Conner | Technical Account Manager",
   description: "Portfolio of Charlie Conner — Technical Account Manager specializing in AI-driven solutions, agentic workflows, and marketing analytics.",
+  icons: {
+    icon: "/logos/favicon_logo.png",
+  },
 };
 
 export default function RootLayout({

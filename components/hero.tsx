@@ -3,7 +3,6 @@
 import { profile } from "../data/profile";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
-import { FiArrowRight } from "react-icons/fi";
 
 export default function Hero() {
   return (
@@ -82,7 +81,7 @@ export default function Hero() {
     "
   >
     View Resume
-    <FiArrowRight className="text-xl" />
+    <img src="/logos/resume_logo.jpg" alt="" className="w-5 h-5 object-contain" />
   </a>
 </div>
       </div>

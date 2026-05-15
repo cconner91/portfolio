@@ -1,6 +1,8 @@
 "use client";
 
-import { FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiMail, FiLinkedin, FiGithub, FiFileText } from "react-icons/fi";
+import Link from "next/link";
+
 
 export default function Contact() {
   return (
@@ -79,6 +81,25 @@ export default function Contact() {
           <FiGithub />
           GitHub
         </a>
+
+        {/* RESUME */}
+        <Link
+          href="/resume"
+          className="
+            inline-flex items-center gap-2
+            px-6 py-3
+            rounded-full
+            text-sm font-semibold
+            border border-[#4ea1ff]/40
+            text-[#4ea1ff]
+            transition-all duration-200
+            hover:bg-[#4ea1ff]/10 hover:border-[#4ea1ff]
+            hover:scale-105 active:scale-95
+          "
+        >
+          <FiFileText />
+          View Resume
+        </Link>
       </div>
 
       {/* SUBTLE FOOTER LINE */}
