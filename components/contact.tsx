@@ -11,7 +11,7 @@ export default function Contact() {
     className="px-6 py-28 max-w-5xl mx-auto text-center">
       
       {/* TITLE */}
-      <h2 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6">
+      <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-6">
         Let’s Connect
       </h2>
 

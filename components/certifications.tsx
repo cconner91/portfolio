@@ -22,7 +22,7 @@ export default function Certifications() {
     <section
     id="certifications" 
     className="px-6 py-20 max-w-5xl mx-auto">
-      <h2 className="text-5xl md:text-6xl font-semibold tracking-[-0.02em] mb-12 text-center">
+      <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-12 text-center">
         Certifications & Learning
       </h2>
 

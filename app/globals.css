@@ -160,6 +160,11 @@ body::after {
 .hex-wrapper .hex {
   will-change: transform;
 }
+/* ORBITRON FONT UTILITY */
+.font-orbitron {
+  font-family: var(--font-orbitron), sans-serif;
+}
+
 /* DOT GRID OVERLAY */
 .dot-grid {
   position: fixed;

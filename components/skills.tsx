@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section id="skills" className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 max-w-5xl mx-auto">
 
-     <h2 className="text-3xl sm:text-4xl md:text-6xl font-semibold mb-12 text-center">
+     <h2 className="font-orbitron text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
         Technical Skillsets & Tools
       </h2>
 

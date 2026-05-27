@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Content (BOTTOM POSITIONED) */}
       <div className="relative text-center px-6 pb-8">
         {/* Name */}
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+        <h1 className="font-orbitron text-5xl md:text-7xl font-black tracking-tight">
           {profile.name}
         </h1>
 
@@ -64,24 +64,27 @@ export default function Hero() {
         </div>
 
 {/* Resume Button */}
-<div className="mt-6 flex justify-center">
+<div className="mt-8 flex justify-center">
   <a
     href="/resume"
     className="
-      inline-flex items-center gap-1.5
-      px-6 py-2.5
-      rounded-full
-      text-sm font-semibold
-      text-white
-      border border-slate-400
-      bg-slate-900
-      transition-all duration-200
-      hover:bg-slate-500 hover:border-slate-800 hover:text-white
+      font-orbitron
+      inline-flex items-center gap-3
+      px-10 py-4
+      text-xs font-bold tracking-[0.2em] uppercase
+      text-[#4ea1ff]
+      bg-[#050d1f]
+      border border-[#4ea1ff]/50
+      transition-all duration-300
+      hover:text-white
+      hover:border-[#4ea1ff]
+      hover:shadow-[0_0_25px_rgba(78,161,255,0.45),inset_0_0_25px_rgba(78,161,255,0.07)]
       hover:scale-105 active:scale-95
     "
+    style={{ clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px))" }}
   >
     View Resume
-    <img src="/logos/resume_file.png" alt="" className="w-5 h-5 object-contain" />
+    <img src="/logos/resume_file.png" alt="" className="w-5 h-5 object-contain opacity-80" />
   </a>
 </div>
       </div>

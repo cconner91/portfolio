@@ -8,8 +8,8 @@ export default function About() {
     <section
       id="about"
     className="px-6 py-20 max-w-5xl mx-auto">
-      <h2 className="text-5xl md:text-6xl font-semibold tracking-[-0.02em] mb-12 text-center">
-        About
+      <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-12 text-center">
+        About Me
       </h2>
 
       <div className="mb-10">
